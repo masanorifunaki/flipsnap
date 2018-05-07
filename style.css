@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .viewport {
-  width: 320px;
+  max-width: 375px;
+  max-height: 667px;
   overflow: hidden;
   margin: 0 auto;
   -webkit-transform: translateZ(0);
@@ -7,7 +12,7 @@
 }
 
 .flipsnap {
-  width: 960px;
+  width: 1125px;
   /* 320px(item width) * 3(item count) */
 }
 
@@ -20,11 +25,12 @@
 
 .item {
   float: left;
-  width: 310px;
+  width: 375px;
+  height: 667px;
   font-size: 50px;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-  padding: 50px 0;
   background: #EFEFEF;
-  border: 5px solid #999;
   color: #666;
 }
