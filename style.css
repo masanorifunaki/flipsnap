@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .viewport {
   max-width: 375px;
   max-height: 667px;
@@ -12,6 +16,7 @@
 }
 
 .flipsnap {
+  margin: 0 auto;
   width: 1125px;
   /* 320px(item width) * 3(item count) */
 }
@@ -24,6 +29,7 @@
 }
 
 .item {
+  margin: 0 auto;
   float: left;
   width: 375px;
   height: 667px;
