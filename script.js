@@ -1,3 +1,3 @@
 'use strict';
 
-Flipsnap('.flipsnap');
+new Siema();

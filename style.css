@@ -6,37 +6,46 @@ body {
   margin: 0;
 }
 
-.viewport {
-  max-width: 375px;
-  max-height: 667px;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-transform: translateZ(0);
-  /* Optional: When heavy at iOS6+ */
+.containr-sp {
+  display: none;
 }
 
-.flipsnap {
-  margin: 0 auto;
-  width: 1125px;
-  /* 320px(item width) * 3(item count) */
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.flipsnap:after {
-  content: '';
-  display: block;
-  clear: both;
-  height: 0;
-}
-
-.item {
-  margin: 0 auto;
-  float: left;
-  width: 375px;
-  height: 667px;
-  font-size: 50px;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  background: #EFEFEF;
-  color: #666;
+@media all and (max-width: 667px) {
+  .main {
+    display: none;
+  }
+  .containr-sp {
+    display: block;
+    width: 375px;
+    height: 667px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .comment {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    margin-bottom: 10px;
+    top: 500px;
+  }
+  .comment img {
+    border-radius: 50%;
+    margin-right: 10px;
+    opacity: 0.8;
+  }
+  .comment-area {
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    margin: 5px 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
 }
